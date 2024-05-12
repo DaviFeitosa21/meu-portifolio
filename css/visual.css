@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+
+/*===Definido===*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+:root {
+    --cor_menus: #0000FF;
+}
+
+/*===Cabeçalho===*/
+.cabecalho {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.menus {
+    display: flex;
+    gap: 30px;
+}
+
+.menus h1 a{
+    position: relative;
+    color: black;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.menus h1 a:hover{
+    color: var(--cor_menus);
+}
+
+.menus h1 a::before {
+    content: " ";
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background-color: var(--cor_menus);
+    bottom: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s;
+}
+  
+.menus h1 a:hover::before {
+    transform: scaleX(1);
+}
+
+/*===Principal===*/
+.principal {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    align-items: center;
+    gap: 50px;
+}
+
+.imagem {
+    padding: 0px;
+}
+
+.texto {
+    color: black;
+    width: 20%;
+}
