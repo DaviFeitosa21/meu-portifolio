@@ -1,0 +1,15 @@
+.sobre {
+    display: flex;
+    margin: 0 auto;
+    width: 600px;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.sobre section {
+    width: 500px;
+    border: 1px solid red;
+}
+
