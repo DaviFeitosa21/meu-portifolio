@@ -13,15 +13,14 @@
 
 .main-port {
     display: flex;
-    width: 65%;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
-    border: 1px solid red;
+    width: 65%;
+    gap: 30px;
+    margin: 10px;
 }
 
 .item-port {
-    display: flex;
-    flex-direction: column;
     padding: 20px;
     gap: 5px;
     border-radius: 8px;
