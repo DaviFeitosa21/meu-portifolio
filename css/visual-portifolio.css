@@ -11,16 +11,23 @@
     gap: 20px;
 }
 
+.main-port {
+    display: flex;
+    width: 65%;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid red;
+}
+
 .item-port {
     display: flex;
     flex-direction: column;
     padding: 20px;
     gap: 5px;
-    border-radius: 10px;
+    border-radius: 8px;
     border: 1px solid var(--cor-secundaria);
-    box-shadow: 0px 15px 10px var(--cor-secundaria);
-    transition: border-color 0.3s ease;
-    transition: box-shadow 0.5s ease;
+    box-shadow: 0px 0px 20px var(--cor-secundaria);
+    transition: box-shadow 0.3s ease;
 }
 
 .item-port-a {
@@ -29,6 +36,5 @@
 }
 
 .item-port:hover {
-    border-color: var(--cor-principal);
-    box-shadow: 5px 5px 5px var(--cor-secundaria);
+    box-shadow: 5px 10px 10px var(--cor-secundaria);
 }
