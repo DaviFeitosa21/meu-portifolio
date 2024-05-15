@@ -17,12 +17,12 @@
     justify-content: center;
     width: 65%;
     gap: 30px;
-    margin: 10px;
+    padding: 20px;
 }
 
 .item-port {
     padding: 20px;
-    gap: 5px;
+    gap: 10px;
     border-radius: 8px;
     border: 1px solid var(--cor-secundaria);
     box-shadow: 0px 0px 20px var(--cor-secundaria);
@@ -30,6 +30,7 @@
 }
 
 .item-port-a {
+    width: 35%;
     text-decoration: none;
     color: black;
 }
