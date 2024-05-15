@@ -5,6 +5,7 @@ async function apiRepos() {
     return reposit
 }
 
+//Função que irá gerar os elementos HTML
 async function carregaAPI() {
     const reposit = await apiRepos()
     const container = document.getElementById('apiReposit')
@@ -16,16 +17,15 @@ async function carregaAPI() {
                     <h3>${repo.name}</h3>
                     <h4>${repo.description || 'sem descrição'}</h4>
                     <p>Linguagem: ${repo.language || 'não especificada'}</p>
-                </section>            
+                </section>
             </a>
         `
         container.innerHTML += repoHTML
     })
 
-    window.onload = function() {
-        const overlay = document.getElementById('loading-overlay');
-        overlay.style.display = 'none';
-    }
+    const carregamento = document.getElementById('botao-loading')
+    carregamento.style.display = 'none'
 }
 
+//Chamada da função quando o repositório estiver carregado
 window.onload = carregaAPI
