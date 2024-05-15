@@ -80,6 +80,7 @@
     width: 20%; 
 }
 
+
 .botao {
     padding: 10px;
     padding-left: 20px;
@@ -89,6 +90,16 @@
     border: none;
     transition: background-color 0.5s ease;
     cursor: pointer;
+}
+
+.ponteiro::after {
+    content: '_';
+    animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
 
 .botao:hover {
