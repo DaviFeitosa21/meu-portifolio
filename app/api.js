@@ -8,8 +8,6 @@ async function apiRepos() {
 //Função que irá gerar os elementos HTML
 async function carregaAPI() {
 
-    animaLetra()
-
     const reposit = await apiRepos()
     const container = document.getElementById('apiReposit')
 
@@ -29,8 +27,6 @@ async function carregaAPI() {
     const carregamento = document.getElementById('botao-loading')
     carregamento.style.display = 'none'
 }
-
-
 
 //Chamada da função quando o repositório estiver carregado
 window.onload = carregaAPI
