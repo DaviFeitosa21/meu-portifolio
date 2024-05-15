@@ -21,6 +21,11 @@ async function carregaAPI() {
         `
         container.innerHTML += repoHTML
     })
+
+    window.onload = function() {
+        const overlay = document.getElementById('loading-overlay');
+        overlay.style.display = 'none';
+    }
 }
 
 window.onload = carregaAPI
