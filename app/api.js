@@ -13,7 +13,7 @@ async function carregaAPI() {
 
     reposit.forEach(repo => {
         const repoHTML = `
-            <a href="${repo.html_url}" class="item-port-a">
+            <a href="${repo.html_url}" class="item-port-a" target='_blank'>
                 <section class="item-port">
                     <h3>${repo.name}</h3>
                     <h4>${repo.description || 'sem descrição'}</h4>
