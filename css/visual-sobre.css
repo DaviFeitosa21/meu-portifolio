@@ -8,8 +8,20 @@
     border: 1px solid red;
 }
 
-.sobre section {
+.sobre {
+    display: flex;
+    flex-direction: column;
     width: 500px;
+    border: 1px solid red;
+    gap: 40px;
+}
+
+.sobre section {
     border: 1px solid red;
 }
 
+.linguagens {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
