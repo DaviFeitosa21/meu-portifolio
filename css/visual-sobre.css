@@ -1,3 +1,7 @@
+:root {
+    --cor-bordas: #DCDCDC;
+}
+
 .sobre {
     display: flex;
     margin: 0 auto;
@@ -5,19 +9,20 @@
     justify-content: center;
     margin-top: 50px;
     text-align: center;
-    border: 1px solid red;
 }
 
 .sobre {
     display: flex;
     flex-direction: column;
     width: 500px;
-    border: 1px solid red;
     gap: 40px;
 }
 
-.sobre section {
-    border: 1px solid red;
+.linguagem {
+    padding: 20px;
+    border: 1px solid var(--cor-bordas);
+    border-radius: 10px;
+    box-shadow: 0 0 20px var(--cor-bordas);
 }
 
 .linguagens {
